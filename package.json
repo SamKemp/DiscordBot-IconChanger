@@ -1,0 +1,22 @@
+{
+  "name": "discordbot-iconchanger",
+  "version": "1.0.0",
+  "description": "A Discord Bot that changes the servers icon",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SamKemp/DiscordBot-IconChanger.git"
+  },
+  "author": "SamKemp55",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/SamKemp/DiscordBot-IconChanger/issues"
+  },
+  "homepage": "https://github.com/SamKemp/DiscordBot-IconChanger#readme",
+  "dependencies": {
+    "discord.js": "^12.5.3"
+  }
+}
