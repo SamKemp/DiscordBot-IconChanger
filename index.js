@@ -3,6 +3,7 @@ require("dotenv").config();
 const Discord = require("discord.js");
 const client = new Discord.Client();
 
+// Command prefix
 var prefix = '¬';
 
 // Server ID to change icon/banner of
@@ -12,22 +13,10 @@ var ICON_ChangeDelay = 600;
 // Number of seconds before banner changes (set 0 to disable)
 var BANNER_ChangeDelay = 0;
 
-const IconArray = [
-    "https://cdn.samkemp.me/Stuff/DiscordIcons/1200px-Icon-round-Question_mark.svg.png",
-    "https://cdn.samkemp.me/Stuff/DiscordIcons/bomb1.png",
-    "https://cdn.samkemp.me/Stuff/DiscordIcons/halo-reach-earth-halo-the-fall-of-reach-planet-halo-2-earth.jpg",
-    "https://cdn.samkemp.me/Stuff/DiscordIcons/ping.png",
-    "https://cdn.samkemp.me/Stuff/DiscordIcons/Png.png",
-    "https://cdn.samkemp.me/Stuff/DiscordIcons/samkemHigh5.png",
-    "https://cdn.samkemp.me/Stuff/DiscordIcons/samkemSoExcited.png",
-    "https://cdn.samkemp.me/Stuff/DiscordIcons/snapchatsquare.png",
-    "https://cdn.samkemp.me/Stuff/DiscordIcons/twitch.png"
-];
+const IconArray = [];
 var SetIcon = 0;
 
-const BannerArray = [
-    ""
-];
+const BannerArray = [];
 var SetBanner = 0;
 
 var BoostCount = 0;
@@ -89,6 +78,7 @@ client.on("message", msg => {
             .catch(console.error);
             return;
         }
+
         // Banner Commands
         else if (msg.content === prefix + "showBanner")
         {
