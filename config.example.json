@@ -1,5 +1,7 @@
 {
   "bot_token": "",
   "clientId": "",
-  "guildId": ""
+  "guildId": "",
+  "Icon_delay": 600,
+  "Banner_delay": 600
 }
